@@ -15,8 +15,12 @@ install_vim () {
     then
         rm ~/.vimrc
     fi
+    if [ -e ~/.vim ]
+    then
+        rm ~/.vim
+    fi
     ln -sf `pwd`/vim/vimrc ~/.vimrc
-    ln -sf `pwd`/vim ~/.vim
+    ln -sf `pwd`/$install_dir/vim ~/.vim
 
     # Install plugins
     vim +PluginInstall +qall
