@@ -1,0 +1,8 @@
+# path
+export PATH=$PATH:~/.local/bin
+
+
+# alias
+alias ll='ls -l'
+alias la='ls -A'
+
